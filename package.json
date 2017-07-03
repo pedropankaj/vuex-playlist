@@ -5,8 +5,8 @@
   "author": "iamshaunjp <shaunjp@shaun-pelling.com>",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "node init && cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "node init && cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
     "vue": "^2.3.3",
@@ -16,6 +16,7 @@
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-preset-env": "^1.5.1",
+    "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
